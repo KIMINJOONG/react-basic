@@ -7,7 +7,9 @@ class App extends Component {
     const name = 'injoong!';
     return (
       <div>
-        hello {name}
+        {
+          name === 'injoong!' && <div>인중이다!</div>
+        }
       </div>
       
     );
