@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
-    const name = 'injoong!';
-    const value = 1;
+    const style = {
+      backgroundColor: 'black'
+      , padding: '16px'
+      , color: 'white'
+      , fontSize: '12px'
+    };
     return (
-      <div>
-        {
-          (() => {
-            if(value === 1) return <div>1이다!</div>
-            if(value === 2) return <div>2다!</div>
-            if(value === 3) return <div>3이다!</div>
-            return <div>없다</div>
-          })()
-        }
-      </div>
-      
+      <div className="App">
+        {/*주석은 이렇게*/ }
+        <h1 // 태그사이에
+        >리액트</h1>
+      </div>      
     );
   }
 }
