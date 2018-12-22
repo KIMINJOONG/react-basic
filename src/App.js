@@ -3,8 +3,12 @@ import './App.css';
 import MyName from './MyName';
 import Counter from './Counter';
 import PracticeSetState from './PracticeSetState';
+import PhoneForm from './PhoneForm';
 
 class App extends Component {
+  handleCreate = (data) => {
+    console.log(data);
+  }
 
   render() {
     
@@ -13,6 +17,9 @@ class App extends Component {
         <MyName name="인중"/>
         <Counter />
         <PracticeSetState />
+        <PhoneForm 
+          onCreate={this.handleCreate}
+          />
       </div> 
     );
   }
