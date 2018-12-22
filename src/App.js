@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MyName from './MyName';
 import Counter from './Counter';
+import PracticeSetState from './PracticeSetState';
 
 class App extends Component {
 
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <MyName name="인중"/>
         <Counter />
+        <PracticeSetState />
       </div> 
     );
   }
