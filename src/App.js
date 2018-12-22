@@ -4,11 +4,12 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const name = 'injoong!';
     return (
-      <React.Fragment>
-        <div>hello</div>
-        <div>bye</div>
-      </React.Fragment>
+      <div>
+        hello {name}
+      </div>
+      
     );
   }
 }
